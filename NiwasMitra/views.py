@@ -4,8 +4,8 @@ from django.template import loader
 
 
 def test(request):
-    return render(request,"base.html")
+    return render(request,"index.html")
 
 def test_loader(request):
-    template=loader.get_template('base.html')
+    template=loader.get_template('index.html')
     return HttpResponse(template.render())

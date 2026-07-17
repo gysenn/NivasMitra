@@ -1,0 +1,1142 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} NivasMitra{%endblock %}
+{% block link_block %}
+<!-- <link rel="icon" type="image/x-icon" href="/static/favicon.ico" /> -->
+<link rel="stylesheet" href="{% static 'css/color_variables.css' %}" />
+<link rel="stylesheet" href="{% static 'css/index_style.css' %}" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+  rel="stylesheet">
+{% endblock %}
+{% block content %}
+<header>
+  <div class="logo_img">
+    <a href="">
+      <img src="{% static 'image/logo.jpeg' %}" alt="" />
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">Buy</a></li>
+      <li><a href="">Sell</a></li>
+      <li><a href="">Rent</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="login_Signup_link">
+    <a href="" class="login_link">Login</a>
+    <a href="" class="signup_link">Sign up</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero_text">
+      <p>Trusted Property Platform</p>
+      <p class="hero_text secondline">Find The Property <br>
+        Perfect For You</p>
+      <p>Discover apartments, houses, land and rental spaces across Nepal with ease </p>
+    </div>
+    <div class="search_container">
+      <form action="">
+        <div class="search_input_box">
+          <input type="text" name="area" id="search_area" placeholder="Chose Area">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search_input_box">
+          <input type="text" name="property_type" id="search_property_type" placeholder="Property Type">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="search_input_box">
+          <input type="text" name="average_price" id="search_average_price" placeholder="Average Price">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="search_btn">
+          <input type="submit" value="Find Now">
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="static_section">
+    <div class="static_info">
+      <div class="static_icon">
+        <img src="{% static 'image/HomeIcon.png' %}" alt="">
+      </div>
+      <div class="static_text">
+        <p class="static_text number">110,000+</p>
+        <p class="static_text info">Active Property Listings</p>
+      </div>
+    </div>
+    <div class="static_info">
+      <div class="static_icon">
+        <img src="{% static 'image/People.png' %}" alt="">
+      </div>
+      <div class="static_text">
+        <p class="static_text number">2M+</p>
+        <p class="static_text info">Monthly Site Vistors</p>
+      </div>
+    </div>
+    <div class="static_info">
+      <div class="static_icon">
+        <img src="{% static 'image/rate.png' %}" alt="">
+      </div>
+      <div class="static_text">
+        <p class="static_text number">2+</p>
+        <p class="static_text info">Trusted Source</p>
+      </div>
+    </div>
+  </section>
+  <section class="category_navigation">
+    <div class="category_container">
+      <a href="" class="category_option_active">Home</a>
+      <a href="" class="category_option">Apartment</a>
+      <a href="" class="category_option">Land</a>
+      <a href="" class="category_option">Rent</a>
+    </div>
+  </section>
+  <section class="top_listing">
+    <div class="toplisting_heading">
+      <h1>
+        Top Listings
+      </h1>
+      <p>Discover the best properties selected for you</p>
+      <a href="" class="toplisting_viewall">
+        View All
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
+    <div class="toplisting_container">
+      <button class="carousel_arrow_left"><i class="fa-solid fa-angle-left"></i></button>
+      <button class="carousel_arrow_right"><i class="fa-solid fa-angle-right"></i></button>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="featured_listing">
+    <div class="featuredlisting_heading">
+      <h1>
+        Featured Listings
+      </h1>
+      <p>Explore our handpicked premium properties available at the best locations and prices.</p>
+    </div>
+    <div class="featuredlisting_container">
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/5089528.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/2ndproperty.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="property_card">
+        <div class="property-image">
+          <img src="{% static 'image/wp12489817.jpg' %}" alt="">
+        </div>
+        <div class="property_info">
+          <div class="property_title">
+            <h4>SkyView Residency</h4>
+          </div>
+          <div class="property_address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rapti-4,Chitwan,Bhandara</p>
+          </div>
+          <div class="property_feature">
+            <div class="feature_icon">
+              <div class="feature_icon bed">
+                <p>3</p>
+                <i class="fa-solid fa-bed"></i>
+
+              </div>
+              <div class="feature_title">
+                <p>Bedroom</p>
+              </div>
+            </div>
+            <div class="feature_icon" id="wahroom_icon">
+              <div class="feature_icon washroom">
+                <p>2</p>
+                <i class="fa-solid fa-bath fa-flip-horizontal"></i>
+              </div>
+              <div class="feature_title">
+                <p>Washroom</p>
+              </div>
+            </div>
+            <div class="feature_icon">
+              <div class="feature_icon area">
+                <p>1200</p>
+                <i class="fa-solid fa-chart-area"></i>
+              </div>
+              <div class="feature_title">
+                <p>Square Ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="property_rate_detail">
+            <p>Rs.2,00,00,000</p>
+            <a href="" class="property_detail_btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featuredlisting_pagination">
+      <button class="left_pagination_button"><i class="fa-solid fa-angle-left"></i></button>
+      <p>1/4</p>
+      <button class="right_pagination_button"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </section>
+</main>
+<footer></footer>
+{% endblock %}
