@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
     background: var(--background-color);
@@ -11,6 +15,14 @@ body {
 
 h1, h2, h3 {
     font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* ----Header Start------ */
@@ -25,7 +37,8 @@ header {
 
 .logo_img {
     width: 128.74px;
-    height: 83;
+    height: 83px;
+    padding: 3px;
 }
 
 .logo_img img {
@@ -35,14 +48,12 @@ header {
 
 nav ul {
     display: flex;
-    list-style: none;
     gap: 44px;
 }
 
 nav ul li a {
     font-size: 18px;
     font-weight: 500;
-    text-decoration: none;
     color: var(--text-color);
     transition: all 0.3s ease;
 }
@@ -55,10 +66,6 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 27px;
-}
-
-.login_Signup_link a {
-    text-decoration: none;
 }
 
 .login_link {
@@ -100,6 +107,7 @@ nav ul li a:hover {
 /* ----Main Start------ */
 main {
     padding: 34px 66px;
+    z-index: 10;
 }
 
 /* ----Hero Section Start------ */
@@ -108,7 +116,7 @@ main {
     padding-left: 27px;
     height: 650px;
     border-radius: 18px;
-    background: linear-gradient(rgba(0, 0, 0, 0.650)), url("../image/herosection_image.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.650)), url("../image/pic/herosection_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,7 +198,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0;
+    margin: 60px 0;
     gap: 92px;
 }
 
@@ -250,7 +258,6 @@ main {
 .category_container .category_option, .category_option_active {
     width: 203px;
     height: 63px;
-    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +275,7 @@ main {
 /* ----Category Nevigation End------ */
 /* ----Top Listing and Featured Listing  Start------ */
 .top_listing, .featured_listing {
-    margin-top: 69px;
+    margin-top: 60px;
 }
 
 
@@ -298,7 +305,6 @@ main {
     font-weight: 700;
     border-radius: 8px;
     position: absolute;
-    text-decoration: none;
     color: #FFFFFF;
     display: flex;
     background-color: var(--secondary-color);
@@ -329,15 +335,13 @@ main {
 .carousel_arrow_left {
     position: absolute;
     top: 48%;
-    left: 0;
-    text-decoration: none;
+    left: 75px;
 }
 
 .carousel_arrow_right {
     position: absolute;
     top: 48%;
-    right: 0;
-    text-decoration: none;
+    right: 75px;
 }
 
 .carousel_arrow_left, .carousel_arrow_right {
@@ -369,7 +373,7 @@ main {
     border-radius: 6px;
     color: var(--primary-color);
     background-color: #FFFFFF;
-    box-shadow: 1px 1px 6px var(--secondary-color);
+    box-shadow: 1px 1px 6px var(--primary-color);
 }
 
 .property_card .property-image {
@@ -452,7 +456,6 @@ main {
 }
 
 .property_rate_detail .property_detail_btn {
-    text-decoration: none;
     width: 120px;
     height: 38px;
     background-color: var(--secondary-color);
@@ -485,7 +488,7 @@ main {
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 4px var(--primary-color);
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .featuredlisting_pagination button:active {
@@ -505,3 +508,336 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* ----Top Listing and Featured Listing  End------ */
+/* ----Services Section Start------ */
+.services_section {
+    margin-top: 60px;
+}
+
+.services_title {
+    text-align: center;
+}
+
+.services_title h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.services_title p {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.service_card_container {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+}
+
+.Service_card {
+    width: 415px;
+    height: 323px;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 6px var(--primary-color);
+}
+
+.Service_card img {
+    width: 65px;
+    height: 76px;
+}
+
+.Service_card h2 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.Service_card p {
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Service_card button {
+    width: 120px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+}
+
+/* ----Services Section End------ */
+/* ----About Section Start------ */
+.aboutWebsite {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.aboutWebsite img {
+    width: 626px;
+    height: 664px;
+    object-fit: cover;
+    filter: brightness(70%) contrast(165%);
+    border-radius: 20px;
+}
+
+.website_details {
+    width: 663px;
+    height: 583px;
+}
+
+.website_details h1 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--primary-color);
+    line-height: 40px;
+}
+
+.website_details p {
+    margin-top: 38px;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 4%;
+    text-align: justify;
+}
+
+.aboutWebsite button {
+    width: 185px;
+    height: 69px;
+    border-radius: 11px;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+/* ----About Section End------ */
+/* ----Contact Us Start------ */
+.contact_section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_text {
+    width: 450px;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+
+.contact_text p {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.contact_text .contact_address {
+    margin-top: 50px;
+}
+
+.contact_text .contact_address i {
+    margin-right: 10px;
+}
+
+.contact_form {
+    width: 765px;
+    height: 624px;
+    padding: 47px 49px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+}
+
+.inline_Wrapper {
+    display: flex;
+    gap: 17px;
+}
+
+.input_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input_box label {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--background-color);
+    margin-bottom: 9px;
+}
+
+.input_box input {
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--background-color);
+    padding: 13px 10px;
+    outline: none;
+    color: var(--background-color);
+}
+
+.input_box input::placeholder {
+    color: var(--secondary-text-color);
+}
+
+.contact_form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 0px 5px;
+    transition: transform 0.3s ease;
+}
+
+.contact_form button:hover {
+    transform: translateY(-3%);
+}
+
+.contact_form button:active {
+    transform: scale(0.9);
+}
+
+.contact_form button span {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: var(--secondary-color);
+}
+
+.contact_form button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ----Contact Us End------ */
+/* ----To Top Start------ */
+.to_top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 50%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.to_top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ----To Top End------ */
+/* ----footer Start------ */
+footer {
+    background-color: #ffff;
+    margin-top: 35px;
+    padding: 50px 30px 0px 30px;
+    box-shadow: 1px 1px 4px var(--primary-color);
+}
+
+.main_footer {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.main_footer .website_logo {
+    width: 370px;
+    height: 244px;
+    padding-bottom: 10px;
+
+}
+
+.website_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_menu {
+    width: 57%;
+    display: flex;
+    gap: 80px;
+}
+
+.footer_menu h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.footer_menu ul li {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.footer_menu ul li i {
+    margin-right: 10px;
+}
+
+.footer_menu ul li a {
+    color: var(--text-color);
+}
+
+footer hr {
+    opacity: 50%;
+    border: 1px solid var(--secondary-text-color);
+    box-shadow: 0px 0px 4px var(--secondary-text-color);
+}
+
+.end_footer {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.end_footer h4 {
+    color: var(--primary-color);
+}
+
+.socail_media_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socail_media_icon img {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px var(--primary-color);
+}
+
+/* ----footer End------ */
