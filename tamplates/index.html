@@ -20,12 +20,12 @@
       <li><a href="">Rent</a></li>
       <li><a href="">Services</a></li>
       <li><a href="">About Us</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#contact-section">Contact</a></li>
     </ul>
   </nav>
   <div class="login_Signup_link">
-    <a href="{% url 'login' %}" clas   s="login_link">Login</a>
-    <a href="" class="signup_link">Sign up</a>
+    <a href="{% url 'login' %}" clas s="login_link">Login</a>
+    <a href="{% url 'signup' %}" class="signup_link">Sign up</a>
   </div>
 </header>
 <main>
@@ -1190,7 +1190,7 @@
       <button>Read more</button>
     </div>
   </section>
-  <section class="contact_section">
+  <section class="contact_section" id="contact-section">
     <div class="contact_text">
       <h1>
         Let's Turn Dreams into Addresses
