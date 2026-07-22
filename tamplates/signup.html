@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Signup Page{% endblock %}
+{% block link_block %}
+<link rel="icon" type="image/x-icon" href="{% static 'image/logo/logo.jpeg' %}" />
+<link rel="stylesheet" href="{% static 'css/color_variables.css' %}" />
+<link rel="stylesheet" href="{% static 'css/signup_style.css' %}" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+{% endblock %}
+{% block content %}
+<main>
+    <section class="signup_form_container">
+        <div class="form_container">
+            <div class="form_wrapper">
+                <div class="form_title">
+                    <h1>signup</h1>
+                </div>
+                <form action="">
+                    <div class="input_box">
+                        <label for="ugmail">Gmail</label>
+                        <input type="text" name="user_gmail" id="ugmail">
+                    </div>
+                    <div class="input_box">
+                        <label for="upassword">Password</label>
+                        <input type="text" name="user_password" id="upassword">
+                    </div>
+                    <div class="forget_password">
+                        <a href="" class="forgot_password_link">Forgot Password?</a>
+                    </div>
+                    <div class="form_btn">
+                        <input type="submit" value="Signup">
+                    </div>
+                    <p class="singup_link">Don't have an account? <a href="{% url 'signup' %}">Signup</a></p>
+                </form>
+            </div>
+        </div>
+        <a href="#" onclick="history.back(); return false;" class="back_to_website_link"><i
+                class="fa-solid fa-angle-left"></i>
+            <span>Back to Website</span>
+        </a>
+    </section>
+</main>
+{% endblock %}
