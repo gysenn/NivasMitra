@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login Page{% endblock %}
+{% block link_block %}
+<link rel="icon" type="image/x-icon" href="{% static 'image/logo/logo.jpeg' %}" />
+<link rel="stylesheet" href="{% static 'css/color_variables.css' %}" />
+<link rel="stylesheet" href="{% static 'css/login_style.css' %}" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+{% endblock %}
+{% block content %}
+<main>
+    <section class="login_form_container">
+        <div class="form_container">
+            <div class="form_wrapper">
+                <div class="form_title">
+                    <h1>Login</h1>
+                </div>
+                <form action="">
+                    <div class="input_fox">
+                        <label for="ugmail">Gmail</label>
+                        <input type="text" name="user_gmail" id="ugmail">
+                    </div>
+                    <div class="input_fox">
+                        <label for="upassword">Password</label>
+                        <input type="text" name="user_password" id="upassword">
+                    </div>
+                    <a href="" class="forgot_password_link">Forgot Password?</a>
+                    <div class="form_btn">
+                        <input type="submit" value="Login">
+                    </div>
+                    <p class="singup_link">Don't have an account? <a href="">Signup</a></p>
+                </form>
+            </div>
+        </div>
+        <a href="" class="back_to_website_link"><i class="fa-solid fa-angle-left"></i>
+            <span>Back to Website</span>
+        </a>
+    </section>
+</main>
+{% endblock %}

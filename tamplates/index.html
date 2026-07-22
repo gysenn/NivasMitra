@@ -2,14 +2,9 @@
 {% load static %}
 {% block title %} NivasMitra{%endblock %}
 {% block link_block %}
-<!-- <link rel="icon" type="image/x-icon" href="/static/favicon.ico" /> -->
+<link rel="icon" type="image/x-icon" href="{% static 'image/logo/logo.jpeg' %}" />
 <link rel="stylesheet" href="{% static 'css/color_variables.css' %}" />
 <link rel="stylesheet" href="{% static 'css/index_style.css' %}" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-  rel="stylesheet">
 {% endblock %}
 {% block content %}
 <header>
@@ -29,7 +24,7 @@
     </ul>
   </nav>
   <div class="login_Signup_link">
-    <a href="" class="login_link">Login</a>
+    <a href="{% url 'login' %}" clas   s="login_link">Login</a>
     <a href="" class="signup_link">Sign up</a>
   </div>
 </header>

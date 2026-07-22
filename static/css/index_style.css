@@ -21,6 +21,7 @@ a {
     text-decoration: none;
 }
 
+
 ul {
     list-style: none;
 }
@@ -301,7 +302,7 @@ main {
     height: 50px;
     font-size: 20px;
     top: 20%;
-    right: 50px;
+    right: 75px;
     font-weight: 700;
     border-radius: 8px;
     position: absolute;
