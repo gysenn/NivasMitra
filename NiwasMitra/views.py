@@ -1,11 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
 
+def index_view(request):
+    return render(request,"index.html")
 
-def test(request):
-    return render(request,"base.html")
+def login_view(request):
+    return render(request,"login.html")
 
-def test_loader(request):
-    template=loader.get_template('base.html')
-    return HttpResponse(template.render())
+def  signup_view(request):
+    return render(request,"login.html")
