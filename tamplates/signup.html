@@ -19,6 +19,10 @@
                 </div>
                 <form action="">
                     <div class="input_box">
+                        <label for="uname">Username</label>
+                        <input type="text" name="user_name" id="uname">
+                    </div>
+                    <div class="input_box">
                         <label for="ugmail">Gmail</label>
                         <input type="text" name="user_gmail" id="ugmail">
                     </div>
@@ -26,13 +30,14 @@
                         <label for="upassword">Password</label>
                         <input type="text" name="user_password" id="upassword">
                     </div>
-                    <div class="forget_password">
-                        <a href="" class="forgot_password_link">Forgot Password?</a>
+                    <div class="input_box">
+                        <label for="uconfrimpassword">Confirm Password</label>
+                        <input type="text" name="user_cofrimpassword" id="uconfrimpassword">
                     </div>
                     <div class="form_btn">
                         <input type="submit" value="Signup">
                     </div>
-                    <p class="singup_link">Don't have an account? <a href="{% url 'signup' %}">Signup</a></p>
+                    <p class="login_link">Already have an account? <a href="{% url 'login' %}">Login</a></p>
                 </form>
             </div>
         </div>

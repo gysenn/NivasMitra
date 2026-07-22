@@ -48,7 +48,7 @@ main {
 
 .form_wrapper {
     width: 450px;
-    height: 400px;
+    height: 525px;
     background-color: rgba(252, 250, 250, 0.8);
     border-radius: 20px;
     box-shadow: 1px 1xp 4px var(--primary-color);
@@ -80,7 +80,7 @@ main {
 
 
 
-.input_box label, .forgot_password_link, .singup_link {
+.input_box label, .forgot_password_link, .login_link {
     color: var(--primary-color);
     font-size: 20px;
     font-weight: 600;
@@ -112,12 +112,12 @@ main {
     font-weight: 600;
 }
 
-.singup_link {
+.login_link {
     font-size: 17px;
     text-align: center;
 }
 
-.singup_link a {
+.login_link a {
     color: var(--primary-color);
     text-decoration: underline;
 }
